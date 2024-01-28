@@ -7,14 +7,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
     integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
     <title>Document</title>
 </head>
 <body>
 
-    <h1> Do i work ?   no :( </h1>
+    <header>
+        <!-- Nav bar on the main page-->
+        <nav class="nav-extended text-shadow black-text #2e7d32 green darken-3">
+            <div class="nav-wrapper">
+              <a href="{{ url_for('get_category') }}" class="brand-logo">Cook Good</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">list</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="{{ url_for('get_category') }}">Home</a></li>
+                <li><a href="#">Your Profile</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Recipe</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Log Out</a></li>
+                <li><a href="#">Register</a></li>
+              </ul>
+            </div>
+          </nav>
+        <!-- Mobile side nav bar-->
+          <ul class="sidenav" id="mobile-demo">
+            <li><h4 class="center-align black-text">Cook Book</h4></li>
+            <li><a href="{{ url_for('get_category') }}">Home</a></li>
+            <li><a href="#">Your Profile</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Recipe</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Log Out</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>  
+    </header>
+
     {% block content %}
     {% endblock %}
 

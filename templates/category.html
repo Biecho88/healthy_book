@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h2>I am!</h2>
-
     {% for category in category %}
         {{ category.recipe_category_name }}
     {% endfor %}

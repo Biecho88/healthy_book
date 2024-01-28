@@ -24,7 +24,7 @@ mongo = PyMongo(app)
 @app.route("/get_category")
 def get_category():
     category = mongo.db.category.find()
-    return render_template("category.html", category=category)
+    return render_template("base.html", category=category)
 
 
 if __name__ == "__main__":
