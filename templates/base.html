@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="icon" href="data:,">
     {% block styles %}
     {% endblock %}
     <title>Cook Book</title>
@@ -25,7 +26,7 @@
                 <li><a href="{{ url_for('get_category') }}">Home</a></li>
                 <li><a href="#">Your Profile</a></li>
                 <li><a href="#">Recipe</a></li>
-                <li><a href="#">Log In</a></li>
+                <li><a href="{{ url_for('log_in') }}">Log In</a></li>
                 <li><a href="#">Log Out</a></li>
                 <li><a href="{{ url_for('register') }}">Register</a></li>
               </ul>
@@ -37,7 +38,7 @@
             <li><a href="{{ url_for('get_category') }}">Home</a></li>
             <li><a href="#">Your Profile</a></li>
             <li><a href="#">Recipe</a></li>
-            <li><a href="#">Log In</a></li>
+            <li><a href="{{ url_for('log_in') }}">Log In</a></li>
             <li><a href="#">Log Out</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
           </ul>  
