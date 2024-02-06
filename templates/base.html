@@ -24,7 +24,7 @@
               <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">list</i></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('get_category') }}">Home</a></li>
-                <li><a href="#">Your Profile</a></li>
+                <li><a href="{{ url_for('profile', username=session['user']) }}">Your Profile</a></li>
                 <li><a href="#">Recipe</a></li>
                 <li><a href="{{ url_for('log_in') }}">Log In</a></li>
                 <li><a href="#">Log Out</a></li>
@@ -36,7 +36,7 @@
           <ul class="sidenav" id="mobile-demo">
             <li><h4 class="center-align black-text">Cook Book</h4></li>
             <li><a href="{{ url_for('get_category') }}">Home</a></li>
-            <li><a href="#">Your Profile</a></li>
+            <li><a href="{{ url_for('profile', username=session['user']) }}">Your Profile</a></li>
             <li><a href="#">Recipe</a></li>
             <li><a href="{{ url_for('log_in') }}">Log In</a></li>
             <li><a href="#">Log Out</a></li>
