@@ -3,3 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var sidenavs = document.querySelectorAll(".sidenav");
     var sidenavsInstances = M.Sidenav.init(sidenavs, {edge: "right"});
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var slinder = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(slinder);
+  });
