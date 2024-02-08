@@ -1,3 +1,9 @@
+
+*
+{
+    font-family: 'Roboto', sans-serif;
+
+}
 .text-shadow {
     text-shadow: 2px 2px 2px grey;
 }
@@ -16,4 +22,8 @@
 
 .icon-size{
     font-size:80px;
+}
+
+.promo-caption {
+    font-weight: bold;
 }
