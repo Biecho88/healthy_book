@@ -24,13 +24,12 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/home")
 def home():
-    category = mongo.db.category.find()
     return render_template("home.html", home=home)
 
 
 @app.route("/get_category")
 def get_category():
-    category = mongo.db.category.find()
+    category = list(mongo.db.category.find())
     return render_template("category.html", category=category)
 
 

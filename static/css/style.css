@@ -2,7 +2,7 @@
 *
 {
     font-family: 'Roboto', sans-serif;
-
+    margin: 0;
 }
 .text-shadow {
     text-shadow: 2px 2px 2px grey;
@@ -13,7 +13,8 @@
 }
 
 .main-text{
-    padding: 80px;
+    padding: 50px;
+    text-align: center;
 }
 
 .massage{
@@ -26,8 +27,15 @@
 
 .promo-caption {
     font-weight: bold;
+    margin-top: 30px;
+    font-size: 40px;
 }
 
 .light-center{
     opacity: 0.5;
 }
+
+.center-promo{
+    margin-top: 30px;
+}
+

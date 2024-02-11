@@ -1,8 +1,26 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for category in category %}
-        {{ category.recipe_category_name }}
-    {% endfor %}
+<div class="row center-align massage">
+
+    <div class="col s12 l4">
+        <div class="center-promo"></div>
+        <i class="fa-solid fa-seedling icon-size"></i>
+        <p class="promo-caption">Smothies</p>
+    </div>
+
+    <div class="col s12 l4">
+        <div class="center-promo"></div>
+        <i class="fa-solid fa-blender icon-size"></i>
+        <p class="promo-caption">Salads</p>
+    </div>
+
+    <div class="col s12 l4">
+        <div class="center-promo"></div>
+        <i class="fa-solid fa-burger icon-size"></i>
+        <p class="promo-caption">Sandwitches</p>
+    </div>
+
+</div>
 
 {% endblock %}
