@@ -29,7 +29,8 @@
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}">Your Profile</a></li>
-                    <li><a href="{{ url_for('get_category') }}">Receipes</a></li>
+                    <li><a href="{{ url_for('get_category') }}">Add Recipe</a></li>
+                    <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
                     <li><a href="{{ url_for('log_out') }}">Log Out</a></li>
                 {% else %}
                     <li><a href="{{ url_for('log_in') }}">Log In</a></li>
@@ -44,7 +45,8 @@
             <li><a href="{{ url_for('home') }}">Home</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Your Profile</a></li>
-                <li><a href="{{ url_for('get_category') }}">Recipe's</a></li>
+                <li><a href="{{ url_for('get_category') }}">Add Recipe</a></li>
+                <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
                 <li><a href="{{ url_for('log_out') }}">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('log_in') }}">Log In</a></li>

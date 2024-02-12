@@ -30,7 +30,13 @@ def home():
 @app.route("/get_category")
 def get_category():
     category = list(mongo.db.category.find())
-    return render_template("category.html", category=category)
+    return render_template("add_recipe.html", category=category)
+
+
+@app.route("/get_recipes")
+def get_recipes():
+    recipe = list(mongo.db.recipe.find())
+    return render_template("get_recipes.html", recipe=recipe)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -106,7 +112,6 @@ def log_out():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("log_in"))
-
 
 
 if __name__ == "__main__":

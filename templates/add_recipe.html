@@ -23,25 +23,27 @@
 
 </div>
 
-<h3 class="center-align">Add Receipe</h3>
+<h3 class="center-align">Add Recipe</h3>
 
 <div class="row">
 
     <div class="row card-panel grey lighten-3 z-depth-5">
 
         <form class="col s12" method="POST" action="">
+            
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-folder-open prefix"></i>
                     <select id="category_name" name="category_name" class="validate" required>
                         <option value="" disabled selected>Choose Category</option>
                         {% for category in category %}
-                            <option value="{{ category.receipe_category_name }}">{{ category.recipe_category_name }}</option>
+                            <option value="{{ category.recipe_category_name }}">{{ category.recipe_category_name }}</option>
                         {% endfor %}
                     </select>
-                    <label for="category_name">Receipe Category</label>
+                    <label for="category_name">Recipe Category</label>
                 </div>
             </div>
+
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
