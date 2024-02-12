@@ -88,6 +88,8 @@ def log_in():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+
+
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -104,6 +106,7 @@ def log_out():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("log_in"))
+
 
 
 if __name__ == "__main__":
