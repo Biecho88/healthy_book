@@ -1,12 +1,55 @@
 {% extends "base.html" %}
 {% block content %}
 
-
     {% for recipe in recipe %}
+    <div class="row center-promo">
 
-        {{ recipe.recipe_name }}<br>
-        
+        <div class=" center-align col s12 m4">
+            <p class="" value="{{ recipe.recipe_img }}" >
+                <img src="{{ recipe.recipe_img }}">
+            </p>
+            <p class="" value="{{ recipe.recipe_category_name }}">{{ recipe.recipe_category_name }}</p>
+            <p class="" value="{{ recipe.recipe_name }}">{{ recipe.recipe_name }}</p>
+            <p class="" value="{{ recipe.recipe_prep_time }}">{{ recipe.recipe_prep_time }} Minutes</p>
+            <p class="" value="{{ recipe.recipe_ingrediens }}">{{ recipe.recipe_ingrediens }}</p>
+            <p class="" value="{{ recipe.recipe_preparation }}">{{ recipe.recipe_preparation }}</p>
+            <p class="" value="{{ recipe.recipe_author_name }}">{{ recipe.recipe_author_name }}</p>
+            <p class="" value="{{ recipe.recipe_date }}">{{ recipe.recipe_date }}</p>
+        </div>
+
+        <div class=" center-align col s12 m4">
+            <p class="" value="{{ recipe.recipe_img }}" >
+                <img src="{{ recipe.recipe_img }}">
+            </p>
+            <p class="" value="{{ recipe.recipe_category_name }}">{{ recipe.recipe_category_name }}</p>
+            <p class="" value="{{ recipe.recipe_name }}">{{ recipe.recipe_name }}</p>
+            <p class="" value="{{ recipe.recipe_prep_time }}">{{ recipe.recipe_prep_time }} Minutes</p>
+            <p class="" value="{{ recipe.recipe_ingrediens }}">
+                <li>{{ recipe.recipe_ingrediens }}</li>
+                <li>{{ recipe.recipe_ingrediens }}</li>
+                <li>{{ recipe.recipe_ingrediens }}</li></p>
+            <p class="" value="{{ recipe.recipe_preparation }}">{{ recipe.recipe_preparation }}</p>
+            <p class="" value="{{ recipe.recipe_author_name }}">{{ recipe.recipe_author_name }}</p>
+            <p class="" value="{{ recipe.recipe_date }}">{{ recipe.recipe_date }}</p>
+        </div>
+
+        <div class=" center-align col s12 m4">
+            <p class="" value="{{ recipe.recipe_img }}" >
+                <img src="{{ recipe.recipe_img }}">
+            </p>
+            <p class="" value="{{ recipe.recipe_category_name }}">{{ recipe.recipe_category_name }}</p>
+            <p class="" value="{{ recipe.recipe_name }}">{{ recipe.recipe_name }}</p>
+            <p class="" value="{{ recipe.recipe_prep_time }}">{{ recipe.recipe_prep_time }} Minutes</p>
+            <p class="" value="{{ recipe.recipe_ingrediens }}">{{ recipe.recipe_ingrediens }}</p>
+            <p class="" value="{{ recipe.recipe_preparation }}">{{ recipe.recipe_preparation }}</p>
+            <p class="" value="{{ recipe.recipe_author_name }}">{{ recipe.recipe_author_name }}</p>
+            <p class="" value="{{ recipe.recipe_date }}">{{ recipe.recipe_date }}</p>
+        </div>
+
+    </div>
     {% endfor %}
+        
+
 
     
 {% endblock %}

@@ -24,7 +24,7 @@
         <nav class="nav-extended text-shadow #00897b teal darken-1">
             <div class="nav-wrapper">
               <a href="{{ url_for('home') }}" class="brand-logo">Cook Book</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">list</i></a>
+              <a href="{{ url_for('home') }}" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">list</i></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 {% if session.user %}
