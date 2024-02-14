@@ -29,21 +29,21 @@
 
     <div class="row card-panel grey lighten-3 z-depth-5 col s12">
 
-        <form class="col s12" method="POST" action="">
-            
+        <form class="col s12" method="POST" action="{{ url_for('get_category') }}">
+            <!-- category selection -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-folder-open prefix"></i>
-                    <select id="category_name" name="category_name" class="validate" required>
+                    <select id="recipe_category_name" name="recipe_category_name" class="validate" required>
                         <option value="" disabled selected>Choose Category</option>
                         {% for category in category %}
                             <option value="{{ category.recipe_category_name }}">{{ category.recipe_category_name }}</option>
                         {% endfor %}
                     </select>
-                    <label for="category_name">Recipe Category</label>
+                    <label for="recipe_category_name">Recipe Category</label>
                 </div>
             </div>
-
+            <!-- recipe name -->   
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix"></i>
@@ -52,13 +52,49 @@
                     <label for="recipe_name">Recipe Name</label>
                 </div>
             </div>
-
+            <!-- recipe preparation time -->   
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix"></i>
-                    <textarea id="recipe_description" name="recipe_description" minlength="5"
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea id="recipe_prep_time" name="recipe_prep_time" minlength="1"
+                        maxlength="10" class="materialize-textarea validate" required></textarea>
+                    <label for="recipe_prep_time">Recipe Preparation Time</label>
+                </div>
+            </div>
+            <!-- list of ingrediens -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea id="recipe_ingrediens" name="recipe_ingrediens" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required></textarea>
-                    <label for="recipe_description">Recipe Description</label>
+                    <label for="recipe_ingrediens">Ingrediens</label>
+                </div>
+            </div>
+            <!-- descryption of preparation steps -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea id="recipe_preparation" name="recipe_preparation" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="recipe_preparation">Recipe Description</label>
+                </div>
+            </div>
+            <!-- Recipe image -->    
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea id="recipe_img" name="recipe_img" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="recipe_img">Recipe Image</label>
+                </div>
+            </div>
+
+            <!-- submit button -->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn-large #00897b teal darken-1 text-shadow">
+                        Add Task <i class="fas fa-plus-square right"></i>
+                    </button>
                 </div>
             </div>
 

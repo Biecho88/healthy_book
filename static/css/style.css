@@ -8,11 +8,6 @@
     text-shadow: 2px 2px 2px grey;
 }
 
-.add_recipe {
-    font-size: ;
-    
-}
-
 .flashes h4 {
     line-height: 2;
 }
@@ -42,21 +37,4 @@
 
 .center-promo{
     margin-top: 30px;
-}
-
-
-@media screen and (max-width:880px ) {
-    .add_recipe{
-        font-size: 70%;
-    }
-}
-
-@media screen and (max-width:670px ) {
-    .add_recipe{
-        font-size: 45%;
-    }
-
-    .promo-caption{
-        font-size: 150%;
-    }
 }
