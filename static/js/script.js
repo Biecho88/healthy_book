@@ -19,7 +19,7 @@
      let sidenavsInstance = M.Sidenav.init(sidenavs, {edge: "right"});
      let selects = document.querySelectorAll("select");
      let selectsInstance = M.FormSelect.init(selects);
-
+     
      validateMaterializeSelect();
      function validateMaterializeSelect() {
          let classValid = "border-bottom: 1px solid #4caf50; box-shadow: 0 1px 0 0 #4caf50;";
