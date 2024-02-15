@@ -47,6 +47,13 @@ def get_category():
     return render_template("add_recipe.html", category=category)
 
 
+@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
+def edit_recipe(recipe_id):
+    recipe = mongo.db.recipe.find_one({"_id": ObjectId(recipe_id)})
+    category = list(mongo.db.category.find())
+    return render_template("edit_recipe.html", recipe=recipe , category=category)
+
+
 @app.route("/get_recipes")
 def get_recipes():
     recipe = list(mongo.db.recipe.find())

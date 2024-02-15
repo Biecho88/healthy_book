@@ -36,7 +36,7 @@
             <p class="" value="{{ recipe.recipe_ingrediens }}">{{ recipe.recipe_ingrediens }}</p>
             <p class="" value="{{ recipe.recipe_preparation }}">{{ recipe.recipe_preparation }}</p>
             <p class="" value="{{ recipe.recipe_author_name }}">{{ recipe.recipe_author_name }}</p>
-            <a href="" class="btn-small #00897b teal darken-1">Edit</a>
+            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small #00897b teal darken-1">Edit</a>
         </div>
         {% endfor %}
     </div>
