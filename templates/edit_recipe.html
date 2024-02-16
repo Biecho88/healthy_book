@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-folder-open prefix"></i>
-                    <select id="category_name" name="category_name" class="validate" required>
+                    <select id="recipe_category_name" name="recipe_category_name" class="validate" required>
                         <option value="" disabled>Choose Category</option>
                         {% for category in category %}
                             {% if category.recipe_category_name == recipe.recipe_category_name %}

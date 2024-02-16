@@ -9,6 +9,8 @@
     var instances = M.Slider.init(slinder);
   });
 
+
+
 //  document.addEventListener('DOMContentLoaded', function() {
 //    var elems = document.querySelectorAll('select');
 //   var instances = M.FormSelect.init(elems);
