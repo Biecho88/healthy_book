@@ -4,23 +4,22 @@
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+
 .text-shadow {
     text-shadow: 2px 2px 2px grey;
 }
 
-.flashes h4 {
-    line-height: 2;
-}
-
+/*************** Main text on home page *********************/
 .main-text{
     padding: 50px;
     text-align: center;
 }
 
-.massage{
-    padding: 80px;
+.bold_text{
+    font-size: 25px;
+    font-weight: bold;
 }
-
+/*************** Get_recipes page *********************/
 .icon-size{
     font-size:80px;
 }
@@ -31,15 +30,49 @@
     font-size: 40px;
 }
 
+.input-field{
+    text-align: left;
+}
+
+.card {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.flashes h4 {
+    line-height: 2;
+}
+
+.massage{
+    padding: 80px;
+}
+
+
+
 .light-center{
     opacity: 0.5;
 }
 
-.center-promo{
-    margin-top: 40px;
+
+
+/*************** Home page responsive design *********************/
+@media screen and (max-width:430px) {
+    .main-text h3 {
+        font-size: xx-large;
+    }
+
+    .icon-size{
+        font-size:70px;
+        margin-top: 25px;
+    }
+        
+    .promo-caption {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .card {
+        font-size: xx-small;
+    }
 }
 
-.card {
-    height: 900px;
-    width: 100%;
-}
+

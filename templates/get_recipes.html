@@ -1,60 +1,58 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- Icons and text showing categories -->
     <div class="row center-align massage">
 
         <div class="col s12 l4">
-            <div class="center-promo"></div>
             <i class="fa-solid fa-seedling icon-size"></i>
             <p class="promo-caption">Smothies</p>
         </div>
 
         <div class="col s12 l4">
-            <div class="center-promo"></div>
             <i class="fa-solid fa-blender icon-size"></i>
             <p class="promo-caption">Salads</p>
         </div>
 
         <div class="col s12 l4">
-            <div class="center-promo"></div>
             <i class="fa-solid fa-burger icon-size"></i>
             <p class="promo-caption">Sandwitches</p>
         </div>
 
     </div>
-
-    <div class="row card-panel grey lighten-5">
+<!-- Serch form -->
+    <div class="row card-panel grey lighten-5 z-depth-5 col s12">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
-            <div class="row valign-wrapper center-align">
-                <div class="input-field col s12 m8">
-                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+            <div class="row center-align ">
+                <div class="input-field">
+                    <i class="fas fa-search prefix"></i>
                     <input type="text" name="query" id="query" minlength="3" class="validate" required>
                     <label for="query">Search Tasks</label>
                 </div>
-                <div class="col s12 m4">
-                    <a href="{{ url_for('get_recipes') }}" class="red btn text-shadow">Reset</a>
-                    <button type="submit" class="light-blue darken-1 btn text-shadow">
-                        <i class="fas fa-search left"></i> Search
-                    </button>
-                </div>
+            </div>
+            <div class="col s12 center-align">
+                <a href="{{ url_for('get_recipes') }}" class="amber btn text-shadow">Reset</a>
+                <button type="submit" class="#00897b teal darken-1 btn text-shadow">
+                    <i class="fas fa-search left"></i> Search
+                </button>
             </div>
         </form>
     </div>
-    
+<!-- Container displaying recipes to the user -->  
     {% if recipe|length > 0 %}
-    <div class="row center-promo center-align">
+    <div class="row center-promo center-align z-depth-5 col s12 m6 l4">
         {% for recipe in recipe %}
         <div class="card">
-            <img class="" width="100%" height="70%" src="{{ recipe.recipe_img }}">
-            <p class="" value="{{ recipe.recipe_category_name }}">{{ recipe.recipe_category_name }}</p>
-            <p class="" value="{{ recipe.recipe_name }}">{{ recipe.recipe_name }}</p>
-            <p class="" value="{{ recipe.recipe_prep_time }}">{{ recipe.recipe_prep_time }} Minutes</p>
-            <p class="" value="{{ recipe.recipe_ingrediens }}">{{ recipe.recipe_ingrediens }}</p>
-            <p class="" value="{{ recipe.recipe_preparation }}">{{ recipe.recipe_preparation }}</p>
-            <p class="" value="{{ recipe.recipe_author_name }}">{{ recipe.recipe_author_name }}</p>
+            <img width="100%" height="70%" src="{{ recipe.recipe_img }}">
+            <p  value="{{ recipe.recipe_category_name }}"> Category:        {{ recipe.recipe_category_name }}</p>
+            <p  value="{{ recipe.recipe_name }}">Name:      {{ recipe.recipe_name }}</p>
+            <p  value="{{ recipe.recipe_prep_time }}">Preparation time:     {{ recipe.recipe_prep_time }} minutes</p>
+            <p  value="{{ recipe.recipe_ingrediens }}">List of ingrediens:      {{ recipe.recipe_ingrediens }}</p>
+            <p  value="{{ recipe.recipe_preparation }}">Preparation steps:      {{ recipe.recipe_preparation }}</p>
+            <p  value="{{ recipe.recipe_author_name }}">Created by:     {{ recipe.recipe_author_name }}</p>
             {% if session.user|lower == recipe.recipe_author_name|lower %}
             <div>
-                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red">Delete</a>
+                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" id="delete" class="btn-small red">Delete</a>
                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small #00897b teal darken-1">Edit</a>
             </div>
             {% endif %}
