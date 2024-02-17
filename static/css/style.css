@@ -19,6 +19,12 @@
     font-size: 25px;
     font-weight: bold;
 }
+
+/*************** Text on home page *********************/
+.light-center{
+    opacity: 0.5;
+}
+
 /*************** Get_recipes page *********************/
 .icon-size{
     font-size:80px;
@@ -39,20 +45,15 @@
     margin-bottom: 0;
 }
 
-.flashes h4 {
-    line-height: 2;
-}
 
 .massage{
     padding: 80px;
 }
 
-
-
-.light-center{
-    opacity: 0.5;
+/*************** Flash massages on multiple sites *********************/
+.flashes h4 {
+    line-height: 2;
 }
-
 
 
 /*************** Home page responsive design *********************/

@@ -1,6 +1,4 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# Import from instaled liberties 
 import os
 from flask import (
     Flask, flash, render_template,
@@ -20,13 +18,13 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
+# redirection to the home page
 @app.route("/")
 @app.route("/home")
 def home():
     return render_template("home.html", home=home)
 
-
+# Insert new data to the database
 @app.route("/get_category", methods=["GET" , "POST"])
 def get_category():
     if request.method == "POST":
@@ -42,18 +40,18 @@ def get_category():
         mongo.db.recipe.insert_one(recipe)
         flash("Recipe Successfully Added")
         return redirect(url_for("get_recipes"))
-
+    # Import categories to the drop down list in adding recipe form
     category = list(mongo.db.category.find())
     return render_template("add_recipe.html", category=category)
 
-
+# serch in recipes by text
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     recipe = list(mongo.db.recipe.find({"$text": {"$search": query}}))
     return render_template("get_recipes.html", recipe=recipe)
 
-
+# Edit existing recipes
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
     if request.method == "POST":
@@ -73,20 +71,20 @@ def edit_recipe(recipe_id):
     category = list(mongo.db.category.find())
     return render_template("edit_recipe.html", recipe=recipe , category=category)
 
-
+# deketing existing recipe
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipe.delete_one({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted")
     return redirect(url_for("get_recipes"))
 
-
+# Import data from Mongodb to the get_recipe page
 @app.route("/get_recipes")
 def get_recipes():
     recipe = list(mongo.db.recipe.find())
     return render_template("get_recipes.html", recipe=recipe)
 
-
+# User registration
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -110,7 +108,7 @@ def register():
         return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
 
-
+# User login
 @app.route("/log_in", methods=["GET", "POST"])
 def log_in():
     if request.method == "POST":
@@ -139,11 +137,9 @@ def log_in():
 
     return render_template("login.html")
 
-
+# User session
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-
-
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -153,7 +149,7 @@ def profile(username):
 
     return redirect(url_for("log_in"))
 
-
+# User logout
 @app.route("/log_out")
 def log_out():
     # remove user from session cookie
