@@ -78,7 +78,9 @@
 4. [Materialize 1.0.0](https://materializecss.com/)
     - Materialize is used to assist with the responsiveness and styling of the website.
 5. [MongoDB](https://www.mongodb.com/)
-    - Mongo is used to store the data andsearch through the recipes by text
+    - Mongo is used to store the data andsearch through the recipes by text.
+6. [Heroku](https://dashboard.heroku.com/)
+    - Heroku is used for cloud-based hosting platform.
 
 ## My Testing
 
@@ -87,66 +89,57 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - [Home page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2F)
 - [Add Recipe page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fget_category)
 - [Recipe page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fget_recipes)
-    - This has few errors but unable to change due to extracting data
-- [Home page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2F)
-- [CSS test results by text input](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbiecho88.github.io%2Fmemory-game%2F#textarea)
+    - This has few errors but unable to change due to extracting data from MongoDB
+- [Login page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Flog_in)
+- [Register page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fregister)
+- [CSS test results by text input](https://jigsaw.w3.org/css-validator/validator)
 - [The text was chacked in the free grammar checker](https://www.grammarly.com/spell-checker)
+- [The text for website and readme file was partly wrriten by ChatGPT 3.5](https://chat.openai.com/)
   
-### Testing User Stories from the User Experience (UX) Section
+### Carried out manual testing as follows : 
 
-- #### First time visitor goals
+#### Homepage
+- Click on logo or Home and verify that home page appears.
+- If visitor is not logged in “Log in” and "Register" should be displayed in the navigation and clicking this link will bring you to the relevant page.
+- If visitor is logged in “Your Profile”, “Add recipe”, “Recipes”, “Log out” should be displayed in the navigation and clicking this link will bring you to the relevant page.
+- Ensure slider displaying correct images.
+- Confirmed that the header links, link to the correct pages
+- Confirmed that the header links, link to the correct pages on smaller devices
+- Confirmed that the social links in the footer open in a new browser window and go to the correct links
 
- 1. As a First Time Visitor, I want to easily understand the rules of the game.
+#### Register page
+- Confirmed that the form work correctly, and user registration adds details to MongoDB database
+- Confirmed that the register form selector work correctly
 
-            1. Upon entering the site, Users are welcomed with a line of emoji images for visual experience and text that explains the rules of the game.
-            2. The User has to press the start button to start the timer and begin the game.
 
- 2. As a First Time Visitor, I want to be able to easily navigate through the site to find content.
+#### Log in  page
+- Confirmed that the form work correctly, and user session is on
+- Confirmed that the log in form selector work correctly
 
-            1. The site has been designed to be fluid and never to entrap the user. The game container stands out from the rest of the page due to the background used.
-            2. Buttons are visible due to the color contrast used.
+#### Add recipe page
+- Confirmed that the form work correctly, and recipes are added
+- Confirmed that the add recipe form selector work correctly
 
- 3. As a First time visitor, I want to be able to start the game and reset when needed.
+#### Edit recipe page
+- Confirmed that the form work correctly, and recipes are eddited
+- Confirmed that the edit form selector work correctly
 
-            1. The user has time to familiarise himself with the page and rules, the game starts when the user clicks the start button.
-            2. The reset button is placed next to the start button which allows the user to reset the game every time the user needs to do so.
+#### Recipe page
+- Confirmed that the website display recipes correctly from the database
+- Confirmed that the "delete" button works correctly
+    - user authorsation is missing as ones clicked recipe is deleted
+- Confirmed that the "edit" button works correctly
+- Confirmed that the user can only delete or edit recipes added by him/her
+- Confirmed that the "search" button works correctly. Search is performed by text on "list of ingridiens" and "recipe name"
 
-- #### Returning visitor goals
-
- 1. As a returning visitor, I want to find all emojis in the quickest time.
-
-            1. The user can reveal cards and find emojis behind them. Matched pairs stay revealed and failure to match results in cards being turned back in 1 second time.
-            2. The user can use different techniques and creativity to reveal cards in the quickest time.
-
- 2. As a returning visitor, I want to find all emojis with fewer amount of moves.
-
-            1. The user can reveal cards and find emojis behind them. Matched pairs stay revealed and failure to match results in cards being turned back in 1 second time.
-            2. The user can use different techniques and creativity to reveal cards in the least amount of moves. 
-
- 3. As a returning visitor, I want to try different tactics when finding pairs
-
-            1. The way, sequence and turns of revealing cards only depend on users decisions.
-            2. The user decides which card to reveal next.
-
-- #### Frequent User Goals
-
-1. As a frequent user, I want to check if the new features have been added.
-
-            1. The user would already be comfortable with the website layout and game features.
-
-2. As a frequent user, I want to check if the game rules changed
-
-            1. The User would be informed in the game rules section of any changes made to the game
-
-3. As a frequent user, I want to beat my records
-
-            1. The User can return to the game and try to solve it in either quicker time or fewer amount of moves.
+#### Footer
+- Confirmed that the footer links, link to the correct pages
 
 ### Further testing
 
-- The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
-- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 12 Pro Max & Samsung Galaxy S20
-- A large amount of testing was done to ensure that the game runs doods and there are no bugs.
+- The Website was tested on Google Chrome, Internet Explorer, Firefox and Safari browsers.
+- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 14, iPhone 12 Pro Max & Samsung Galaxy S20
+- A large amount of testing was done to ensure that the aplication has no bugs.
 - Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Screenshots from testing
@@ -185,11 +178,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
-- The user can start the game without starting the timer. The move counter still works this way.
-  
-- Time doesn't stop when the game is finished.
-
-- The back button directs the user to nonexisting page (404 error), the user is automatically redirected to the main page after 4 seconds.
+- None
 
 ## Deployment
 
