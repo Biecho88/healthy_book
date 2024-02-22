@@ -65,6 +65,7 @@
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 ## Frameworks, Libraries & Programs used
 
@@ -73,9 +74,11 @@
 2. [GitHub:](https://github.com/)
     - GitHub is used to store the project code after being pushed from Git.
 3. [Pixabay](https://pixabay.com/)
-    - Pixabay Was used for images at the start of the project but then it was changed.
-4. [Bootstrap 5.1.3](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-    - Bootstrap is used to assist with the responsiveness and styling of the website.
+    - Pixabay Was used for images.
+4. [Materialize 1.0.0](https://materializecss.com/)
+    - Materialize is used to assist with the responsiveness and styling of the website.
+5. [MongoDB](https://www.mongodb.com/)
+    - Mongo is used to store the data andsearch through the recipes by text
 
 ## My Testing
 
