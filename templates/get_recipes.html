@@ -44,12 +44,12 @@
         {% for recipe in recipe %}
         <div class="card">
             <img width="100%" height="70%" src="{{ recipe.recipe_img }}">
-            <p  value="{{ recipe.recipe_category_name }}"> Category:        {{ recipe.recipe_category_name }}</p>
-            <p  value="{{ recipe.recipe_name }}">Name:      {{ recipe.recipe_name }}</p>
-            <p  value="{{ recipe.recipe_prep_time }}">Preparation time:     {{ recipe.recipe_prep_time }} minutes</p>
-            <p  value="{{ recipe.recipe_ingrediens }}">List of ingrediens:      {{ recipe.recipe_ingrediens }}</p>
-            <p  value="{{ recipe.recipe_preparation }}">Preparation steps:      {{ recipe.recipe_preparation }}</p>
-            <p  value="{{ recipe.recipe_author_name }}">Created by:     {{ recipe.recipe_author_name }}</p>
+            <p> Category:        {{ recipe.recipe_category_name }}</p>
+            <p>Name:      {{ recipe.recipe_name }}</p>
+            <p>Preparation time:     {{ recipe.recipe_prep_time }} minutes</p>
+            <p>List of ingrediens:      {{ recipe.recipe_ingrediens }}</p>
+            <p>Preparation steps:      {{ recipe.recipe_preparation }}</p>
+            <p>Created by:     {{ recipe.recipe_author_name }}</p>
             {% if session.user|lower == recipe.recipe_author_name|lower %}
             <div>
                 <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" id="delete" class="btn-small red">Delete</a>
