@@ -87,6 +87,40 @@
 
 <h2 align="center"><img src="https://i.ibb.co/N7Kr05n/Database-schema.png"  alt="Database_schema" border="0"></h2>
 
+### Relational database explained
+A relational database for web development is a type of database management system (DBMS) that organizes data into tables of rows and columns, with relationships defined between them. Here's a brief overview of its components and how it's used in web development:
+
+- Tables: Data is stored in tables, where each table represents a specific entity or concept (e.g., users, products, orders). Each row in a table represents a single record or instance of that entity, and each column represents a specific attribute or field of that entity.
+
+- Primary Keys: Each table typically has a primary key, which uniquely identifies each row within the table. This ensures that each record is uniquely identifiable and facilitates relationships between tables.
+
+- Relationships: Relationships between tables are established using foreign keys. A foreign key in one table refers to the primary key in another table, creating a link between the two tables. Common types of relationships include one-to-one, one-to-many, and many-to-many.
+
+- Normalization: Relational databases are often normalized to minimize redundancy and improve data integrity. Normalization involves organizing data into multiple tables and eliminating redundant information.
+
+- Structured Query Language (SQL): SQL is used to interact with relational databases. It provides a standardized language for querying, updating, and managing data in the database. Common SQL commands include SELECT, INSERT, UPDATE, DELETE, and JOIN.
+
+- ACID Properties: Relational databases ensure data consistency and integrity by adhering to ACID properties: Atomicity, Consistency, Isolation, and Durability. These properties guarantee that database transactions are processed reliably and securely.
+
+In web development, relational databases are commonly used as the backend data storage solution for web applications. They allow developers to store and retrieve data efficiently, support complex queries, and enforce data integrity constraints. Frameworks and libraries such as Django (Python), Ruby on Rails (Ruby), and Laravel (PHP) provide built-in support for relational databases, making it easy to integrate them into web applications.
+
+### Non-Relational database explained
+A non-relational database, also known as NoSQL (Not Only SQL), is a type of database management system that stores and retrieves data in a format other than the tabular relations used in relational databases. Here's a brief overview of non-relational databases and their use in web development:
+
+- Document Stores: One common type of non-relational database is the document store, which stores data in flexible, schema-less documents, typically using formats like JSON or BSON. Each document can have its own structure, and related data can be nested within documents.
+
+- Key-Value Stores: Key-value stores are simple databases that store data as a collection of key-value pairs. They are highly efficient for simple data retrieval but may not support complex queries or relationships between data.
+
+- Wide-Column Stores: Wide-column stores organize data into columns rather than rows, allowing for efficient retrieval of large datasets with varying schemas. They are well-suited for storing and analyzing big data.
+
+- Graph Databases: Graph databases represent data as nodes, edges, and properties, making them ideal for storing and querying complex relationships between data entities. They excel at handling interconnected data, such as social networks or recommendation systems.
+
+- In-Memory Databases: In-memory databases store data in system memory rather than on disk, resulting in faster read and write operations. They are commonly used for caching frequently accessed data and improving application performance.
+
+- Distributed Databases: Distributed databases distribute data across multiple nodes or servers, providing scalability and fault tolerance. They are designed to handle large volumes of data and high levels of concurrency, making them suitable for web applications with high traffic and data storage requirements.
+
+Non-relational databases are often used in web development for their flexibility, scalability, and performance advantages, especially in applications with rapidly changing requirements or large volumes of unstructured data. Popular examples of non-relational databases include MongoDB, Redis, Cassandra, and Neo4j. These databases offer a wide range of features and capabilities to meet the diverse needs of modern web applications.
+
 ## My Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
