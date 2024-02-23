@@ -43,7 +43,7 @@
     <div class="row center-promo center-align z-depth-5 col s12 m6 l4">
         {% for recipe in recipe %}
         <div class="card">
-            <img class="image_size" height="70%" src="{{ recipe.recipe_img }}" alt="Recipe image">
+            <img class="image_size" src="{{ recipe.recipe_img }}" alt="Recipe image">
             <p> Category:        {{ recipe.recipe_category_name }}</p>
             <p>Name:      {{ recipe.recipe_name }}</p>
             <p>Preparation time:     {{ recipe.recipe_prep_time }} minutes</p>
