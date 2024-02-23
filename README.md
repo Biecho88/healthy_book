@@ -2,7 +2,7 @@
 
 [View the live project here.](#)
 
-<h2 align="center"><img src="#" alt="Cook Book" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/N7Kr05n/Database-schema.png"  alt="Database_schema" border="0"></h2>
 
 # Welcome to our Cookbook Website!
 
@@ -67,6 +67,7 @@
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
+
 ## Frameworks, Libraries & Programs used
 
 1. [Git](https://git-scm.com/)
@@ -82,20 +83,53 @@
 6. [Heroku](https://dashboard.heroku.com/)
     - Heroku is used for cloud-based hosting platform.
 
+## Database_schema - for planning purposes before creating website
+
+<h2 align="center"><img src="https://i.ibb.co/N7Kr05n/Database-schema.png"  alt="Database_schema" border="0"></h2>
+
 ## My Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 - [Home page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2F)
 - [Add Recipe page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fget_category)
-- [Recipe page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fget_recipes)
-    - This has few errors but unable to change due to extracting data from MongoDB
+- [Recipe page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fget_recipes)
 - [Login page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Flog_in)
 - [Register page](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhealthy-book-piotr-034b028d3ac7.herokuapp.com%2Fregister)
 - [CSS test results by text input](https://jigsaw.w3.org/css-validator/validator)
-- [The text was chacked in the free grammar checker](https://www.grammarly.com/spell-checker)
-- [The text for website and readme file was partly wrriten by ChatGPT 3.5](https://chat.openai.com/)
+
+<h2 align="center"><img src="https://i.ibb.co/F03r9yM/CSS-check.png"  alt="CSS validation check" border="0"></h2>
+
+- The text was chacked in the free grammar checker](https://www.grammarly.com/spell-checker)
+- The text for website and readme file was partly wrriten by ChatGPT 3.5](https://chat.openai.com/)
   
+## PEP8 Python style guide explained - 
+PEP 8 is a style guide for writing Python code. PEP stands for Python Enhancement Proposal, and it's a design document providing information or describing a new feature for Python or its processes. PEP 8 specifically focuses on the style conventions for writing Python code in a way that is readable and consistent.
+
+- Here's an overview of some of the key points covered in PEP 8:
+
+- Indentation: Python code should be indented using 4 spaces per indentation level. Tabs should not be used for indentation.
+
+- Line Length: Lines of code should be limited to 79 characters. However, this is not a strict rule, and lines can be up to 120 characters if necessary, but should be avoided when possible.
+
+- Blank Lines: Use blank lines to separate functions, classes, and blocks of code within functions to improve readability.
+
+- Imports: Import statements should usually be on separate lines and should import only one module per line. Standard library imports should be grouped before third-party library imports.
+
+- Whitespace: Surround operators with whitespace, but don't use extraneous whitespace. Also, avoid trailing whitespace at the end of lines.
+
+- Naming Conventions: Use descriptive names for variables, functions, classes, and modules. Variables and functions should be lowercase, with words separated by underscores (snake_case). Classes should be capitalized (CamelCase).
+
+- Comments: Write comments to explain the purpose of the code when necessary. Comments should be clear and concise. Inline comments should be used sparingly and should be preceded by at least two spaces.
+
+- Documentation Strings: Use docstrings to document modules, classes, functions, and methods. Docstrings should be enclosed in triple quotes (""").
+
+- Function and Method Arguments: Don't put spaces around the = sign when used to indicate a keyword argument or a default parameter value.
+
+- Constants: Constants should be defined using all capital letters with underscores separating words.
+
+These are just some of the key points from PEP 8. Adhering to these style conventions helps make Python code more readable and maintainable, especially in collaborative projects where consistency is important.
+
 ### Carried out manual testing as follows : 
 
 #### Homepage
@@ -144,37 +178,37 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Screenshots from testing
 
-#### Tested if the array with emojis works correctly
+#### Tested if registration of the new user works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/F6vcfpg/Emoji-Test.png" alt="Array list test" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/SQmjf4F/Registration.png" alt="Registration succesfull" border="0"></h2>
 
-#### Tested if console logs list of emoji correctly
+#### Tested if log in of created user works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/p3bbzm1/Emoji-List-Test.png" alt="List of emoji test" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/RS2Dbjn/Login.png" alt="Log in test" border="0"></h2>
 
-#### Manipulated DOM to build tiles test
+#### Tested if log out of loged in user works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/1X60s0C/Build-Tile-Through-DOM.png" alt="Build tile through the DOM" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/8KbS3sw/Logout.png" alt="Log out test" border="0"></h2>
 
-#### Data revealed test
+#### Tested if adding recipe to the database works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/pQmCt3z/Data-Revealed.png" alt="DataRevealed test" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/SV4gWTK/Add-recipe-test.png" alt="Add recipe" border="0"></h2>
 
-#### Tested if paired tiles stay revealed
+#### Tested if editing recipe works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/bBqMRW1/Paired-Tiles-Stay-Revealed.png" alt="Paired tiles stay revealed" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/27d3d2x/Edit-recipe.png" alt="Edit recipe" border="0"></h2>
 
-#### Massage at the end of the game
+#### Tested if deleting recipe works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/HTLSBhb/End-Of-Game.png" alt="End of game" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/VgKzYWC/Delete-recipe.png" alt="Delete recipe" border="0"></h2>
 
-#### One of the friends tests shows emojis too big for the tile
+#### Check if patterns of the forms works corectly
 
-<h2 align="center"><img src="https://i.ibb.co/wJsBVJ9/received-668982745078365.jpg" alt="Emojis to big for mobile phone screen" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/bBvqj5h/Check-if-patterns-are-working.png" alt="Pattern check" border="0"></h2>
 
-#### The timer starts once START button is clicked
+#### TSecond check if patters on forms works correctly
 
-<h2 align="center"><img src="https://i.ibb.co/g4tGgPR/Timer-Check.png" alt="TimerCheck" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/xq0hWxT/Check-if-patterns-are-working-v2.png" alt="Second pattern check" border="0"></h2>
 
 ### Known Bugs
 
@@ -182,24 +216,21 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ## Deployment
 
-### GitHub Pages
+Deployment and source control was carried out via GitHub and Heroku. The repository location is as follows:https://github.com/Biecho88/healthy_book
 
-The project was deployed to GitHub Pages using the following steps...
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Biecho88/memory-game)
-2. At the top of the Repository (not the top of the page), locate the "Settings" Button on the menu.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://biecho88.github.io/memory-game/) in the "GitHub Pages" section.
-
-### Forking the GitHub Repository
-
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not the top of the page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+1. Database and Tables were created in an Atlas MongoDB account
+2. Project workspace was created in GitHub. In this workspace: Flask was installed  - It was moved to GitPod but still linked to GitHub.
+3. Setup run.py file and imported flask and os
+4. Create a new Heroku App - unique name and EU Server
+5. Login to Heroku to add config variables including IP, Port, Mongo_DB and Mongo_URI
+6. Get Flask to talk to MongoDB
+7. Add extra libraries to run.py
+8. Add DB connection code to run.py 
+9. Test connection to DB again to confirm it's working
+10. Connect GitHub repository to Heroku using code provided by heroku and github
+11. Continue to create app and regular commits
+12. Set Debug to False
+13. Connect GitHub repository to Heroku using code provided by heroku and github
 
 ### Making a Local Clone
 
