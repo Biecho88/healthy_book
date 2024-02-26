@@ -2,7 +2,7 @@
 
 [View the live project here.](#)
 
-<h2 align="center"><img src="https://i.ibb.co/N7Kr05n/Database-schema.png"  alt="Database_schema" border="0"></h2>
+<h2 align="center"><img src="https://i.ibb.co/7tbCKwM/Strona.png"  alt="Database_schema" border="0"></h2>
 
 # Welcome to our Cookbook Website!
 
@@ -82,6 +82,8 @@
     - Mongo is used to store the data andsearch through the recipes by text.
 6. [Heroku](https://dashboard.heroku.com/)
     - Heroku is used for cloud-based hosting platform.
+7. [Font Awesome](https://fontawesome.com/)
+    - Font Awesome styling of the website.
 
 ## Database_schema - for planning purposes before creating website
 
