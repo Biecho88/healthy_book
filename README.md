@@ -1,6 +1,6 @@
 <h1 align="center">Cook Book</h1>
 
-[View the live project here.](#)
+[View the live project here.](https://healthy-book-piotr-034b028d3ac7.herokuapp.com/home)
 
 <h2 align="center"><img src="https://i.ibb.co/7tbCKwM/Strona.png"  alt="Database_schema" border="0"></h2>
 
