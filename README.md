@@ -56,9 +56,9 @@
   
     Roboto font is the main font used throughout the whole website with sans-serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
 
-- #### Imagery
+- #### Icons
 
-    Emojis have been used as decoration on the main webpage and as an image behind cards for the game.
+    Materialize and Font Awesome icons have been used to style the page to boost user experience.
 
 ## Languages used
 
@@ -166,6 +166,16 @@ PEP 8 is a style guide for writing Python code. PEP stands for Python Enhancemen
 
 These are just some of the key points from PEP 8. Adhering to these style conventions helps make Python code more readable and maintainable, especially in collaborative projects where consistency is important.
 
+### Carried out automotion testing with PEP8 installed in terminal with command "$ pip install pep8" : 
+
+#### PEP8 first scan
+
+<h2 align="center"><img src="https://i.ibb.co/4fQfzmy/pep8-first-scan.png" alt="pep8 firsts scan" border="0"></h2>
+
+#### PEP8 second scan
+
+<h2 align="center"><img src="https://i.ibb.co/9HwH4D5/pep8-second-scan.png" alt="pep8 second scan" border="0"></h2>
+
 ### Carried out manual testing as follows : 
 
 #### Homepage
@@ -242,7 +252,7 @@ These are just some of the key points from PEP 8. Adhering to these style conven
 
 <h2 align="center"><img src="https://i.ibb.co/bBvqj5h/Check-if-patterns-are-working.png" alt="Pattern check" border="0"></h2>
 
-#### TSecond check if patters on forms works correctly
+#### Second check if patters on forms works correctly
 
 <h2 align="center"><img src="https://i.ibb.co/xq0hWxT/Check-if-patterns-are-working-v2.png" alt="Second pattern check" border="0"></h2>
 
